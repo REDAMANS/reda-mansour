@@ -42,7 +42,7 @@ const Projects = () => {
     return (
         <section className="section__padding flex flex-col gap-12">
             <header className="flex flex-col gap-8 items-center">
-                <h2 className={`${lilita_one}`}>
+                <h2 className={`${lilita_one.className}`}>
                     <GradualAnimatedText gap={14} text="My projects" />
                 </h2>
                 <p className="small__text text-center max-w-3xl">
