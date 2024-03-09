@@ -18,7 +18,7 @@ const GradualAnimatedText = ({ text, gap }: { text: string, gap?: number }) => {
         window.addEventListener("scroll", listener);
 
         return () => window.removeEventListener("scroll", listener);
-    }, [])
+    }, [listener])
 
     const textArrWithoutSpace = text.split(' ');
 

@@ -38,7 +38,7 @@ const AboutMe = () => {
                     <GradualAnimatedText gap={14} text="About me" />
                 </h2>
                 <p className="small__text text-center max-w-3xl">
-                    For a long time, coding was my hobby, I've always tried to improve my skills as a web developer and also as a designer to create real websites and web applications. During the process of learning, I also imrpoved my SEO skills to improve website rankings. Today, well, I'm still learning, but I'm also capable of creating websites with many features, including E-commerce websites, portfolios, brand websites ...<br />
+                    For a long time, coding was my hobby, I&apos;ve always tried to improve my skills as a web developer and also as a designer to create real websites and web applications. During the process of learning, I also imrpoved my SEO skills to improve website rankings. Today, well, I&apos;m still learning, but I&apos;m also capable of creating websites with many features, including E-commerce websites, portfolios, brand websites ...<br />
                 </p>
             </header>
             <div className="flex flex-row flex-wrap gap-16 justify-center">
