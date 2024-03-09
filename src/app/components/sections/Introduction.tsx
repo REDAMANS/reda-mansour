@@ -4,7 +4,7 @@ import { lilita_one } from "@/app/fonts";
 const Introduction = () => {
 
     return (
-        <section className={`pt-20 mb-32 section__padding flex flex-col gap-8 ${lilita_one.className}`}>
+        <section className={`mt-32 mb-32 section__padding flex flex-col gap-8 ${lilita_one.className}`}>
             <h1>
                 <GradualAnimatedText text="Hello, world!" />
             </h1>
