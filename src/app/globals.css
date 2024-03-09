@@ -2,32 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  background-color: #121218;
+  color: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1 {
+  @apply font-black text-5xl md:text-6xl lg:text-7xl;
+}
+
+h2 {
+  @apply font-bold text-3xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply font-semibold text-xl md:text-2xl lg:text-3xl;
+}
+
+
+.section__padding {
+  @apply p-[2rem] md:p-[4rem] lg:px-[6rem];
+}
+
+.small__text {
+  @apply text-gray-300 text-base;
+}
+
+.styled__button {
+  @apply px-4 py-3 rounded-lg font-bold text-base transition-[font-size];
+  background: rgb(89,159,255);
+  background: -moz-linear-gradient(112deg, rgba(89,159,255,1) 0%, rgba(91,0,209,1) 100%);
+  background: -webkit-linear-gradient(112deg, rgba(89,159,255,1) 0%, rgba(91,0,209,1) 100%);
+  background: linear-gradient(112deg, rgba(89,159,255,1) 0%, rgba(91,0,209,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#599fff",endColorstr="#5b00d1",GradientType=1);
+}
+
+.styled__button:hover {
+  @apply text-lg;
+}
+
+@keyframes textGradualFadeUp {
+  0% {
+    display: inline-block;
+    transform: translateY(30px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.fade-right {
+  animation: fade-right 1s cubic-bezier(.19,.73,.53,1.01);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes fade-right {
+  0% {
+    transform: translateX(-800px)
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
