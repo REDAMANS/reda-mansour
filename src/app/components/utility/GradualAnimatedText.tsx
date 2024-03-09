@@ -8,7 +8,7 @@ const GradualAnimatedText = ({ text, gap }: { text: string, gap?: number }) => {
     const ref = useRef<HTMLHeadingElement>(null!)
 
     const listener = () => {
-        if(ref.current.offsetTop < window.scrollY + window.innerHeight && !animationStarted) {
+        if(typeof ref.current !== "undefined" && ref.current.offsetTop < window.scrollY + window.innerHeight && !animationStarted) {
             startAnimation(true);
         }
     }
